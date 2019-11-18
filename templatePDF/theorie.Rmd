@@ -1,0 +1,52 @@
+---
+title: "*Utilisation Guide*"
+author: "*Cordeiro Melissa*, *Coulibaly Nahny*,*Todirca Teodora*"
+date: "29 octobre 2019"
+output:
+  html_document: default
+  pdf_document: default
+---  
+
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```  
+
+  
+  
+## SUPPORT VECTOR MACHINE DEMONSTRATOR  
+
+
+
+*Firstly,the purpose of this Shiny Application is to expose the principles of Support Vector Machines and secondly, to apply this method on our database in order to improve the fraud detection system.In the end, we will compare this method to other benchmarks*.  
+
+*Our Shiny Application is divised in three main parts: * 
+
+>- Data Visualisation  
+>- Methods and Functions used to rebalance our DataBase  
+>- Svm and Comparisation of SVM'S performance with different models.
+
+*I will start by briefly introducing the database that we will use: *  
+
+- In the **"Data Visualisation" tab** *an excerpt from the table and some descriptive statistics.You can click on the buttons below the tables to have access to the other variables.*
+- In the **"Balancing" tab** *the proportion of fraud and non-fraud from the original database.After splitting the original base in a training sample(70%) and a test sample(30%), we will apply the Smote function on the training sample.The proportion of fraud and non-fraud after rebalancing the database evolves according to the change in the smote sample size,the value of parameter K and the maximum times of synthetic minority instances.You can move the cursor to see how the proportion of fraud and non-fraud changes.In the end, we use Entropy-Based Filters to find weights of discrete attributes basing on their correlation with continous class attribute. As you might observe, the 14th main composant is highest correlated with class.*  
+- In the **"SVM" tab** *the purpose of SVM,its intuition and an emphasis on the principles of the SVM'S method in 2 cases:*  
+
+>- Linearly Separable Sample
+>- Not linearly Separable Sample
+
+*After that you can estimate your SVM, to finally evaluate the predictive capabilities of your model on the test sample. For that you can vary the following parameters and thus judge their impact on the predictions and the quality of the model: * 
+
+>- The cost parameter (the cost of classification errors)
+>- The type of kernel used (linear,sigmoid,polynomial or radial)  
+
+
+- *The following tabs groups the use of various Machine Learning methods on our database to evaluate and compare their different predictive powers with SVM. We used Logistic Regression, the KNN method, Decision Tree and RandomForest.*  
+
+**Finally we present in the last tab, a brief conclusion on these comparisons.As you might observe from the ROC curves our models are excellent.**
+
+
+
+
+
+

@@ -18,6 +18,21 @@ r_packages:
   - shiny
   - tidyverse
   - kableExtra
+  - mlr
+  - rpart
+  - rpart.plot
+  - e1071
+  - caret
+  - smotefamily
+  - FSelectorRcpp
+  - randomForest
+  - data.table
+  - DT
+  - shinythemes
+  - ggplot2
+  - plotly
   
 script:
   - R -f deploy.R
+
+ 
